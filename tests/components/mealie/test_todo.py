@@ -80,6 +80,41 @@ async def test_todo_actions(
     getattr(mock_mealie_client, method).assert_called_once()
 
 
+async def test_update_todo_list_item_without_rename(
+    hass: HomeAssistant,
+    mock_mealie_client: AsyncMock,
+    mock_config_entry: MockConfigEntry,
+) -> None:
+    """Test updating an item's status preserves its name and food details."""
+    await setup_integration(hass, mock_config_entry)
+
+    await hass.services.async_call(
+        TODO_DOMAIN,
+        TodoServices.UPDATE_ITEM,
+        {ATTR_ITEM: "1 can acorn squash", ATTR_STATUS: "completed"},
+        target={ATTR_ENTITY_ID: "todo.mealie_supermarket"},
+        blocking=True,
+    )
+
+    mock_mealie_client.update_shopping_item.assert_awaited_once_with(
+        "84d8fd74-8eb0-402e-84b6-71f251bfb7cc",
+        MutateShoppingItem(
+            item_id="84d8fd74-8eb0-402e-84b6-71f251bfb7cc",
+            list_id="9ce096fe-ded2-4077-877d-78ba450ab13e",
+            note="",
+            display="1 can acorn squash",
+            checked=True,
+            position=1,
+            is_food=True,
+            disable_amount=False,
+            quantity=1.0,
+            label_id=None,
+            food_id="09322430-d24c-4b1a-abb6-22b6ed3a88f5",
+            unit_id="7bf539d4-fc78-48bc-b48e-c35ccccec34a",
+        ),
+    )
+
+
 async def test_add_todo_list_item_error(
     hass: HomeAssistant,
     mock_mealie_client: AsyncMock,

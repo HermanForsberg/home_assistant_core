@@ -3,13 +3,7 @@
 from dataclasses import asdict
 from typing import override
 
-from aiomealie import (
-    MealieConnectionError,
-    MealieError,
-    MutateShoppingItem,
-    ShoppingItem,
-    ShoppingList,
-)
+from aiomealie import MealieError, MutateShoppingItem, ShoppingItem, ShoppingList
 
 from homeassistant.components.todo import (
     DOMAIN as TODO_DOMAIN,
@@ -26,6 +20,7 @@ from homeassistant.helpers.entity_platform import AddConfigEntryEntitiesCallback
 from .const import DOMAIN
 from .coordinator import MealieConfigEntry, MealieShoppingListCoordinator
 from .entity import MealieEntity
+from .error_managers import handle_connection_error
 
 PARALLEL_UPDATES = 0
 TODO_STATUS_MAP = {
@@ -282,13 +277,8 @@ class MealieShoppingListTodoListEntity(MealieEntity, TodoListEntity):
     async def async_get_shopping_list_items(self) -> ServiceResponse:
         """Get structured shopping list items."""
         client = self.coordinator.client
-        try:
+        with handle_connection_error():
             shopping_items = await client.get_shopping_items(self._shopping_list_id)
-        except MealieConnectionError as err:
-            raise HomeAssistantError(
-                translation_domain=DOMAIN,
-                translation_key="connection_error",
-            ) from err
         return {
             "name": self.shopping_list.name,
             "items": [asdict(item) for item in shopping_items.items],

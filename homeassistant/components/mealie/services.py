@@ -2,12 +2,7 @@
 
 from dataclasses import asdict
 
-from aiomealie import (
-    MealieConnectionError,
-    MealieNotFoundError,
-    MealieValidationError,
-    MealplanEntryType,
-)
+from aiomealie import MealieNotFoundError, MealieValidationError, MealplanEntryType
 from awesomeversion import AwesomeVersion
 import voluptuous as vol
 
@@ -20,7 +15,7 @@ from homeassistant.core import (
     SupportsResponse,
     callback,
 )
-from homeassistant.exceptions import HomeAssistantError, ServiceValidationError
+from homeassistant.exceptions import ServiceValidationError
 from homeassistant.helpers import config_validation as cv, service
 from homeassistant.util import dt as dt_util
 
@@ -39,6 +34,7 @@ from .const import (
     DOMAIN,
 )
 from .coordinator import MealieConfigEntry
+from .error_managers import handle_connection_error
 
 SERVICE_GET_MEALPLAN = "get_mealplan"
 SERVICE_GET_MEALPLAN_SCHEMA = vol.Schema(
@@ -179,13 +175,8 @@ async def _async_get_mealplan(call: ServiceCall) -> ServiceResponse:
             translation_key="end_date_before_start_date",
         )
     client = entry.runtime_data.client
-    try:
+    with handle_connection_error():
         mealplans = await client.get_mealplans(start_date, end_date)
-    except MealieConnectionError as err:
-        raise HomeAssistantError(
-            translation_domain=DOMAIN,
-            translation_key="connection_error",
-        ) from err
     return {"mealplan": [asdict(x) for x in mealplans.items]}
 
 
@@ -197,12 +188,8 @@ async def _async_get_recipe(call: ServiceCall) -> ServiceResponse:
     recipe_id = call.data[ATTR_RECIPE_ID]
     client = entry.runtime_data.client
     try:
-        recipe = await client.get_recipe(recipe_id)
-    except MealieConnectionError as err:
-        raise HomeAssistantError(
-            translation_domain=DOMAIN,
-            translation_key="connection_error",
-        ) from err
+        with handle_connection_error():
+            recipe = await client.get_recipe(recipe_id)
     except MealieNotFoundError as err:
         raise ServiceValidationError(
             translation_domain=DOMAIN,
@@ -221,12 +208,10 @@ async def _async_get_recipes(call: ServiceCall) -> ServiceResponse:
     result_limit = call.data.get(ATTR_RESULT_LIMIT, 10)
     client = entry.runtime_data.client
     try:
-        recipes = await client.get_recipes(search=search_terms, per_page=result_limit)
-    except MealieConnectionError as err:
-        raise HomeAssistantError(
-            translation_domain=DOMAIN,
-            translation_key="connection_error",
-        ) from err
+        with handle_connection_error():
+            recipes = await client.get_recipes(
+                search=search_terms, per_page=result_limit
+            )
     except MealieNotFoundError as err:
         raise ServiceValidationError(
             translation_domain=DOMAIN,
@@ -244,16 +229,12 @@ async def _async_import_recipe(call: ServiceCall) -> ServiceResponse:
     include_tags = call.data.get(ATTR_INCLUDE_TAGS, False)
     client = entry.runtime_data.client
     try:
-        recipe = await client.import_recipe(url, include_tags)
+        with handle_connection_error():
+            recipe = await client.import_recipe(url, include_tags)
     except MealieValidationError as err:
         raise ServiceValidationError(
             translation_domain=DOMAIN,
             translation_key="could_not_import_recipe",
-        ) from err
-    except MealieConnectionError as err:
-        raise HomeAssistantError(
-            translation_domain=DOMAIN,
-            translation_key="connection_error",
         ) from err
     if call.return_response:
         return {"recipe": asdict(recipe)}
@@ -271,13 +252,8 @@ async def _async_set_random_mealplan(call: ServiceCall) -> ServiceResponse:
 
     _validate_mealplan_type(entry.runtime_data.version, entry_type.value)
 
-    try:
+    with handle_connection_error():
         mealplan = await client.random_mealplan(mealplan_date, entry_type)
-    except MealieConnectionError as err:
-        raise HomeAssistantError(
-            translation_domain=DOMAIN,
-            translation_key="connection_error",
-        ) from err
     if call.return_response:
         return {"mealplan": asdict(mealplan)}
     return None
@@ -294,7 +270,7 @@ async def _async_set_mealplan(call: ServiceCall) -> ServiceResponse:
 
     _validate_mealplan_type(entry.runtime_data.version, entry_type.value)
 
-    try:
+    with handle_connection_error():
         mealplan = await client.set_mealplan(
             mealplan_date,
             entry_type,
@@ -302,11 +278,6 @@ async def _async_set_mealplan(call: ServiceCall) -> ServiceResponse:
             note_title=call.data.get(ATTR_NOTE_TITLE),
             note_text=call.data.get(ATTR_NOTE_TEXT),
         )
-    except MealieConnectionError as err:
-        raise HomeAssistantError(
-            translation_domain=DOMAIN,
-            translation_key="connection_error",
-        ) from err
     if call.return_response:
         return {"mealplan": asdict(mealplan)}
     return None
@@ -321,14 +292,10 @@ async def _async_delete_mealplan(call: ServiceCall) -> ServiceResponse:
     client = entry.runtime_data.client
 
     try:
-        await client.delete_mealplan(
-            mealplan_id,
-        )
-    except MealieConnectionError as err:
-        raise HomeAssistantError(
-            translation_domain=DOMAIN,
-            translation_key="connection_error",
-        ) from err
+        with handle_connection_error():
+            await client.delete_mealplan(
+                mealplan_id,
+            )
     except MealieNotFoundError as err:
         raise ServiceValidationError(
             translation_domain=DOMAIN,
@@ -351,19 +318,15 @@ async def _async_update_mealplan(call: ServiceCall) -> ServiceResponse:
     _validate_mealplan_type(entry.runtime_data.version, entry_type.value)
 
     try:
-        mealplan = await client.update_mealplan(
-            mealplan_id,
-            mealplan_date,
-            entry_type,
-            recipe_id=call.data.get(ATTR_RECIPE_ID),
-            note_title=call.data.get(ATTR_NOTE_TITLE),
-            note_text=call.data.get(ATTR_NOTE_TEXT),
-        )
-    except MealieConnectionError as err:
-        raise HomeAssistantError(
-            translation_domain=DOMAIN,
-            translation_key="connection_error",
-        ) from err
+        with handle_connection_error():
+            mealplan = await client.update_mealplan(
+                mealplan_id,
+                mealplan_date,
+                entry_type,
+                recipe_id=call.data.get(ATTR_RECIPE_ID),
+                note_title=call.data.get(ATTR_NOTE_TITLE),
+                note_text=call.data.get(ATTR_NOTE_TEXT),
+            )
     except MealieNotFoundError as err:
         raise ServiceValidationError(
             translation_domain=DOMAIN,

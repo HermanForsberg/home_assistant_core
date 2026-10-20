@@ -505,6 +505,7 @@ class HomeAssistant:
         This method is a coroutine.
         """
         _LOGGER.info("Starting Home Assistant %s", __version__)
+        _LOGGER.warning("DAT266 - IA1 visible change test")
 
         def _log_startup_blocked(tasks: set[asyncio.Future[Any]]) -> None:
             """Log when startup is blocked by tasks."""

@@ -1,0 +1,2 @@
+aiohttp==3.14.3
+ingredient-parser-nlp==2.9.1

@@ -1,0 +1,41 @@
+id,language,text,food_names,quantity,unit_names,qualifiers,notes
+sv01,sv,400 g krossade tomater,krossade tomater,400,g|gram,,
+sv02,sv,2 gula lökar finhackade,gul lök|gula lökar,2,,,
+sv03,sv,3 vitlöksklyftor pressade,vitlök|vitlöksklyftor,3,,,Count cloves rather than whole bulbs
+sv04,sv,500 g kycklingfilé,kycklingfilé,500,g|gram,filé,
+sv05,sv,2 dl laktosfri vispgrädde,vispgrädde|laktosfri vispgrädde,2,dl|deciliter,laktosfri,
+sv06,sv,1 msk olivolja,olivolja,1,msk|matsked|matskedar,,
+sv07,sv,1 tsk torkad oregano,oregano|torkad oregano,1,tsk|tesked|teskedar,torkad,
+sv08,sv,250 g fryst broccoli,broccoli|fryst broccoli,250,g|gram,fryst,
+sv09,sv,1 burk kokta kikärtor (400 g),kikärtor|kokta kikärtor,1,burk|burkar,kokta,400 g is package weight; compare outer amount only
+sv10,sv,2 förpackningar fetaost à 150 g,fetaost,2,förpackning|förpackningar,,150 g is package weight; compare outer amount only
+sv11,sv,1½ dl vetemjöl,vetemjöl,1.5,dl|deciliter,,Unicode mixed fraction
+sv12,sv,0.5 kg nötfärs,nötfärs,0.5,kg|kilogram,,
+sv13,sv,2 mogna avokador,avokado|avokador,2,,,
+sv14,sv,200 g färska champinjoner,champinjon|champinjoner|färska champinjoner,200,g|gram,färska,
+sv15,sv,1 liter havredryck,havredryck,1,l|liter,,
+sv16,sv,300 g glutenfri pasta,pasta|glutenfri pasta,300,g|gram,glutenfri,
+sv17,sv,½ citron saften,citron,0.5,,,Fraction of a fruit; no juice volume inferred
+sv18,sv,salt efter smak,salt,,,,Unspecified quantity excluded from quantity metric
+sv19,sv,1 kruka färsk basilika,basilika|färsk basilika,1,kruka|krukor,färsk,
+sv20,sv,"2,5 dl mjölk 3 %",mjölk,2.5,dl|deciliter,3 %,Swedish decimal comma and fat content
+en01,en,400 g chopped tomatoes,chopped tomatoes,400,g|gram|grams,,
+en02,en,"2 yellow onions, finely chopped",yellow onion|yellow onions,2,,,
+en03,en,3 cloves garlic minced,garlic,3,clove|cloves,,Count cloves rather than whole bulbs
+en04,en,500 g boneless chicken breast,chicken breast|boneless chicken breast,500,g|gram|grams,boneless,
+en05,en,200 ml lactose-free cream,cream|lactose-free cream,200,ml|milliliter|millilitre|milliliters|millilitres,lactose-free,
+en06,en,1 tbsp olive oil,olive oil,1,tbsp|tablespoon|tablespoons,,
+en07,en,1 tsp dried oregano,oregano|dried oregano,1,tsp|teaspoon|teaspoons,dried,
+en08,en,250 g frozen broccoli,broccoli|frozen broccoli,250,g|gram|grams,frozen,
+en09,en,1 can chickpeas (400 g) drained,chickpeas,1,can|cans,,400 g is package weight; compare outer amount only
+en10,en,1 1/2 cups all-purpose flour,all-purpose flour|all purpose flour,1.5,cup|cups,,ASCII mixed fraction
+en11,en,200 g gluten-free pasta,pasta|gluten-free pasta,200,g|gram|grams,gluten-free,
+en12,en,2 large eggs,egg|eggs,2,,,Size should not change the egg count
+en13,en,75 g unsalted butter softened,butter|unsalted butter,75,g|gram|grams,unsalted,
+en14,en,1/2 tsp ground cumin,cumin|ground cumin,0.5,tsp|teaspoon|teaspoons,ground,ASCII fraction
+en15,en,150 g fresh spinach,spinach|fresh spinach,150,g|gram|grams,fresh,
+en16,en,2 tbsp low-sodium soy sauce,soy sauce|low-sodium soy sauce,2,tbsp|tablespoon|tablespoons,low-sodium,
+en17,en,1 lemon zested,lemon,1,,,Count the fruit rather than infer zest weight
+en18,en,black pepper to taste,black pepper,,,,Unspecified quantity excluded from quantity metric
+en19,en,2 cans coconut milk (400 ml each),coconut milk,2,can|cans,,400 ml is package volume; compare outer amount only
+en20,en,"100 g cheddar cheese, grated",cheddar cheese|cheddar,100,g|gram|grams,,

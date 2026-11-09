@@ -1,0 +1,51 @@
+ingredient_id,ingredient_text,product_name,brand,package_size,store,source_url,observed_date,expected_match,reason,expected_food_names,expected_quantity,expected_unit_names,offer_id
+sv02,2 gula lökar finhackade,,,,,,,,,,,,
+sv03,3 vitlöksklyftor pressade,,,,,,,,,,,,
+sv12,0.5 kg nötfärs,,,,,,,,,,,,
+sv13,2 mogna avokador,,,,,,,,,,,,
+sv14,200 g färska champinjoner,,,,,,,,,,,,
+sv16,300 g glutenfri pasta,,,,,,,,,,,,
+sv17,½ citron saften,,,,,,,,,,,,
+sv18,salt efter smak,,,,,,,,,,,,
+sv19,1 kruka färsk basilika,,,,,,,,,,,,
+sv20,"2,5 dl mjölk 3 %",,,,,,,,,,,,
+en01,400 g chopped tomatoes,,,,,,,,,,,,
+en02,"2 yellow onions, finely chopped",,,,,,,,,,,,
+en03,3 cloves garlic minced,,,,,,,,,,,,
+en04,500 g boneless chicken breast,,,,,,,,,,,,
+en05,200 ml lactose-free cream,,,,,,,,,,,,
+en06,1 tbsp olive oil,,,,,,,,,,,,
+en07,1 tsp dried oregano,,,,,,,,,,,,
+en08,250 g frozen broccoli,,,,,,,,,,,,
+en09,1 can chickpeas (400 g) drained,,,,,,,,,,,,
+en10,1 1/2 cups all-purpose flour,,,,,,,,,,,,
+en11,200 g gluten-free pasta,,,,,,,,,,,,
+en12,2 large eggs,,,,,,,,,,,,
+en13,75 g unsalted butter softened,,,,,,,,,,,,
+en14,1/2 tsp ground cumin,,,,,,,,,,,,
+en15,150 g fresh spinach,,,,,,,,,,,,
+en16,2 tbsp low-sodium soy sauce,,,,,,,,,,,,
+en17,1 lemon zested,,,,,,,,,,,,
+en18,black pepper to taste,,,,,,,,,,,,
+en19,2 cans coconut milk (400 ml each),,,,,,,,,,,,
+en20,"100 g cheddar cheese, grated",,,,,,,,,,,,
+,,Pasta,La Molisana,500 g,Coop Mariagatan,,,,User-supplied Matpriskollen API example; source: fixtures/matpriskollen_coop_mariagatan.json. Input is product.name only; package size is not sent. Food labels are manually authored.,pasta,,,2377450
+,,"Ost, riven",Coop,150 g,Coop Mariagatan,,,,User-supplied Matpriskollen API example; source: fixtures/matpriskollen_coop_mariagatan.json. Input is product.name only; package size is not sent. Food labels are manually authored.,"ost, riven|riven ost",,,2377456
+,,Wokmix Malaysia/Thailand,Coop,400-500 g,Coop Mariagatan,,,,User-supplied Matpriskollen API example; source: fixtures/matpriskollen_coop_mariagatan.json. Input is product.name only; package size is not sent. Food labels are manually authored.,wokmix malaysia/thailand,,,2377451
+,,Kokosmjölk,Coop,"2,5 dl",Coop Mariagatan,,,,User-supplied Matpriskollen API example; source: fixtures/matpriskollen_coop_mariagatan.json. Input is product.name only; package size is not sent. Food labels are manually authored.,kokosmjölk,,,2377452
+,,Färdigrätt Dagens,Findus,340-400 g,Coop Mariagatan,,,,User-supplied Matpriskollen API example; source: fixtures/matpriskollen_coop_mariagatan.json. Input is product.name only; package size is not sent. Food labels are manually authored.,färdigrätt dagens,,,2377449
+,,Blandfärs,Scan,800 g,Coop Mariagatan,,,,User-supplied Matpriskollen API example; source: fixtures/matpriskollen_coop_mariagatan.json. Input is product.name only; package size is not sent. Food labels are manually authored.,blandfärs,,,2377418
+sv15,1 liter havredryck,"Havredryck, mjölkfri",Coop,1 l,Coop Mariagatan,,,yes,User-supplied Matpriskollen API example; source: fixtures/matpriskollen_coop_mariagatan.json. Input is product.name only; package size is not sent. Food labels are manually authored.,"havredryck, mjölkfri|mjölkfri havredryck",,,2377455
+,,"Pålägg, skivat",Jakobsdals,80-100 g,Coop Mariagatan,,,,User-supplied Matpriskollen API example; source: fixtures/matpriskollen_coop_mariagatan.json. Input is product.name only; package size is not sent. Food labels are manually authored.,"pålägg, skivat|skivat pålägg",,,2377438
+,,"Kryddmix, 3-p",Santa Maria,3x28 g,Coop Mariagatan,,,,User-supplied Matpriskollen API example; source: fixtures/matpriskollen_coop_mariagatan.json. Input is product.name only; package size is not sent. Food labels are manually authored.,kryddmix,,,2377421
+,,Kycklingben/-klubba/-vinge,GuldFågeln,1 kg,Coop Mariagatan,,,,User-supplied Matpriskollen API example; source: fixtures/matpriskollen_coop_mariagatan.json. Input is product.name only; package size is not sent. Food labels are manually authored.,kycklingben/-klubba/-vinge,,,2377419
+,,Tvål Pump-,Coop,500 ml,Coop Mariagatan,,,no,User-supplied Matpriskollen API example; source: fixtures/matpriskollen_coop_mariagatan.json. Input is product.name only; package size is not sent. Food labels are manually authored. Non-food example; not a recipe ingredient.,tvål pump-|tvål,,,2377454
+,,Torskfilé,Royal Greenland,400 g,Coop Mariagatan,,,,User-supplied Matpriskollen API example; source: fixtures/matpriskollen_coop_mariagatan.json. Input is product.name only; package size is not sent. Food labels are manually authored.,torskfilé,,,2377481
+,,Morot i påse,Coop,1 kg,Coop Mariagatan,,,,User-supplied Matpriskollen API example; source: fixtures/matpriskollen_coop_mariagatan.json. Input is product.name only; package size is not sent. Food labels are manually authored.,morot|morötter,,,2377431
+,,"Vindruvor, röda, kärnfria i ask",Coop,500 g,Coop Mariagatan,,,,User-supplied Matpriskollen API example; source: fixtures/matpriskollen_coop_mariagatan.json. Input is product.name only; package size is not sent. Food labels are manually authored.,"röda kärnfria vindruvor|vindruvor, röda, kärnfria",,,2377420
+,,"Potatis i påse, fast/mjölig, eko",Änglamark,1 kg,Coop Mariagatan,,,,User-supplied Matpriskollen API example; source: fixtures/matpriskollen_coop_mariagatan.json. Input is product.name only; package size is not sent. Food labels are manually authored.,"ekologisk potatis|potatis, fast/mjölig, eko|potatis fast/mjölig eko",,,2377430
+,,Snacks,Estrella,200-275 g,Coop Mariagatan,,,,User-supplied Matpriskollen API example; source: fixtures/matpriskollen_coop_mariagatan.json. Input is product.name only; package size is not sent. Food labels are manually authored.,snacks,,,2377442
+,,Tunnbröd,Coop,375 g,Coop Mariagatan,,,,User-supplied Matpriskollen API example; source: fixtures/matpriskollen_coop_mariagatan.json. Input is product.name only; package size is not sent. Food labels are manually authored.,tunnbröd,,,2377453
+,,"Amaryllis, röd, 2-stänglad",,,Coop Mariagatan,,,no,User-supplied Matpriskollen API example; source: fixtures/matpriskollen_coop_mariagatan.json. Input is product.name only; package size is not sent. Food labels are manually authored. Non-food example; not a recipe ingredient.,"amaryllis, röd, 2-stänglad|röd amaryllis",,,2377448
+,,Fläskytterfilé,Scan,ca 1 kg,Coop Mariagatan,,,,User-supplied Matpriskollen API example; source: fixtures/matpriskollen_coop_mariagatan.json. Input is product.name only; package size is not sent. Food labels are manually authored.,fläskytterfilé,,,2377416
+,,Chokladbitmix i påse,Coop,500 g,Coop Mariagatan,,,,User-supplied Matpriskollen API example; source: fixtures/matpriskollen_coop_mariagatan.json. Input is product.name only; package size is not sent. Food labels are manually authored.,chokladbitmix,,,2377588

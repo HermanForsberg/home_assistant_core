@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+cd "$(dirname "$0")"
+uv venv --python 3.14 .venv
+uv pip sync --python .venv/bin/python3 requirements.lock
+.venv/bin/python3 -m nltk.downloader -d .venv/nltk_data averaged_perceptron_tagger_eng
+.venv/bin/python3 run.py --validate

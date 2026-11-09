@@ -1,0 +1,1062 @@
+{
+  "storeName": "Coop Mariagatan",
+  "offers": [
+    {
+      "id": 2377450,
+      "key": "0b449b01-eb77-4728-b2a2-a5916e7d9d75",
+      "condition": "",
+      "description": "Välj mellan olika sorter.",
+      "price": "3 för 45,00",
+      "comprice": "30,00/kg",
+      "regular": "",
+      "volume": "500 g",
+      "pant": false,
+      "requiresMembershipCard": true,
+      "requiredSelfScan": false,
+      "requiresCoupon": false,
+      "validFrom": 1794178800,
+      "validTo": 1794783599,
+      "featured": false,
+      "age_limit": "",
+      "store_order": 4,
+      "store_id": 2577,
+      "store_key": "b92a247c-926e-417d-9b8d-d81395493eb8",
+      "product": {
+        "id": 0,
+        "name": "Pasta",
+        "origin": "",
+        "categories": [
+          {
+            "id": 0,
+            "name": "Pasta, Ris & Matgryn",
+            "parent_category": {
+              "id": 0,
+              "name": "Skafferi"
+            }
+          }
+        ],
+        "tags": [],
+        "brand": "La Molisana"
+      },
+      "produkt_bild_urls": {
+        "produktKey": "8d77aa5b-bc99-4aa9-b5f8-e623e6ac9716",
+        "bildUrl": "https://mpk-product-images.s3.eu-north-1.amazonaws.com/8d77aa5b-bc99-4aa9-b5f8-e623e6ac9716/full.jpeg",
+        "thumbnailUrl": "https://mpk-product-images.s3.eu-north-1.amazonaws.com/8d77aa5b-bc99-4aa9-b5f8-e623e6ac9716/thumb100p.jpeg"
+      },
+      "article_matches": "Pasta, ",
+      "cardURL": null,
+      "hasRecipe": true,
+      "store": null
+    },
+    {
+      "id": 2377456,
+      "key": "134e38e1-5b12-4d16-9c84-7c680b3f15d0",
+      "condition": "Gäller ej ekologisk.",
+      "description": "Välj mellan olika sorter. Fetthalt 11-31%.",
+      "price": "2 för 38,00",
+      "comprice": "126,67/kg",
+      "regular": "",
+      "volume": "150 g",
+      "pant": false,
+      "requiresMembershipCard": false,
+      "requiredSelfScan": false,
+      "requiresCoupon": false,
+      "validFrom": 1794178800,
+      "validTo": 1794783599,
+      "featured": false,
+      "age_limit": "",
+      "store_order": 18,
+      "store_id": 2577,
+      "store_key": "b92a247c-926e-417d-9b8d-d81395493eb8",
+      "product": {
+        "id": 0,
+        "name": "Ost, riven",
+        "origin": "",
+        "categories": [
+          {
+            "id": 0,
+            "name": "Riven Ost",
+            "parent_category": {
+              "id": 0,
+              "name": "Ost"
+            }
+          }
+        ],
+        "tags": [],
+        "brand": "Coop"
+      },
+      "produkt_bild_urls": {
+        "produktKey": "4bf4a2ad-aff3-40af-a1d6-cffb496392fe",
+        "bildUrl": "https://mpk-product-images.s3.eu-north-1.amazonaws.com/4bf4a2ad-aff3-40af-a1d6-cffb496392fe/full.jpeg",
+        "thumbnailUrl": "https://mpk-product-images.s3.eu-north-1.amazonaws.com/4bf4a2ad-aff3-40af-a1d6-cffb496392fe/thumb100p.jpeg"
+      },
+      "article_matches": "Ost, Riven ost",
+      "cardURL": null,
+      "hasRecipe": true,
+      "store": null
+    },
+    {
+      "id": 2377451,
+      "key": "20a62129-ad09-4a16-b0ca-7f5551182dec",
+      "condition": "",
+      "description": "",
+      "price": "2 för 35,00",
+      "comprice": "35,00-43,75/kg",
+      "regular": "",
+      "volume": "400-500 g",
+      "pant": false,
+      "requiresMembershipCard": false,
+      "requiredSelfScan": false,
+      "requiresCoupon": false,
+      "validFrom": 1794178800,
+      "validTo": 1794783599,
+      "featured": false,
+      "age_limit": "",
+      "store_order": 10,
+      "store_id": 2577,
+      "store_key": "b92a247c-926e-417d-9b8d-d81395493eb8",
+      "product": {
+        "id": 0,
+        "name": "Wokmix Malaysia/Thailand",
+        "origin": "",
+        "categories": [
+          {
+            "id": 0,
+            "name": "Frysta Grönsaker",
+            "parent_category": {
+              "id": 0,
+              "name": "Grönsaker"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "id": 0,
+            "name": "Djupfryst",
+            "image_url": "https://mpk-public-assets.s3.eu-north-1.amazonaws.com/tags/fryst.png"
+          },
+          {
+            "id": 0,
+            "name": "Nyckelhålsmärkt",
+            "image_url": "https://mpk-public-assets.s3.eu-north-1.amazonaws.com/tags/nyckelhal.png"
+          }
+        ],
+        "brand": "Coop"
+      },
+      "produkt_bild_urls": {
+        "produktKey": "4d08e304-167e-4108-bae4-923af5044254",
+        "bildUrl": "https://mpk-product-images.s3.eu-north-1.amazonaws.com/4d08e304-167e-4108-bae4-923af5044254/full.jpeg",
+        "thumbnailUrl": "https://mpk-product-images.s3.eu-north-1.amazonaws.com/4d08e304-167e-4108-bae4-923af5044254/thumb100p.jpeg"
+      },
+      "article_matches": "Grönsaker, Grönt, Wokmix",
+      "cardURL": null,
+      "hasRecipe": true,
+      "store": null
+    },
+    {
+      "id": 2377452,
+      "key": "2fe512f3-e942-4af2-bb27-ef675378f553",
+      "condition": "",
+      "description": "Välj mellan olika sorter. Fetthalt 17-19%.",
+      "price": "2 för 20,00",
+      "comprice": "40,00/l",
+      "regular": "",
+      "volume": "2,5 dl",
+      "pant": false,
+      "requiresMembershipCard": false,
+      "requiredSelfScan": false,
+      "requiresCoupon": false,
+      "validFrom": 1794178800,
+      "validTo": 1794783599,
+      "featured": false,
+      "age_limit": "",
+      "store_order": 18,
+      "store_id": 2577,
+      "store_key": "b92a247c-926e-417d-9b8d-d81395493eb8",
+      "product": {
+        "id": 0,
+        "name": "Kokosmjölk",
+        "origin": "",
+        "categories": [
+          {
+            "id": 0,
+            "name": "Asiatiskt",
+            "parent_category": {
+              "id": 0,
+              "name": "Skafferi"
+            }
+          }
+        ],
+        "tags": [],
+        "brand": "Coop"
+      },
+      "produkt_bild_urls": {
+        "produktKey": "9daa199e-c25a-46aa-b705-a7890a63df0a",
+        "bildUrl": "https://mpk-product-images.s3.eu-north-1.amazonaws.com/9daa199e-c25a-46aa-b705-a7890a63df0a/full.jpeg",
+        "thumbnailUrl": "https://mpk-product-images.s3.eu-north-1.amazonaws.com/9daa199e-c25a-46aa-b705-a7890a63df0a/thumb100p.jpeg"
+      },
+      "article_matches": "Mjöl, Kokosmjölk, Kokos",
+      "cardURL": null,
+      "hasRecipe": true,
+      "store": null
+    },
+    {
+      "id": 2377449,
+      "key": "3e6258c4-fd5f-4eb3-924d-c0d8d30b2093",
+      "condition": "Max 2 köp/hushåll.",
+      "description": "Välj mellan olika sorter.",
+      "price": "3 för 89,00",
+      "comprice": "74,17-87,25/kg",
+      "regular": "",
+      "volume": "340-400 g",
+      "pant": false,
+      "requiresMembershipCard": true,
+      "requiredSelfScan": false,
+      "requiresCoupon": false,
+      "validFrom": 1794178800,
+      "validTo": 1794783599,
+      "featured": false,
+      "age_limit": "",
+      "store_order": 10,
+      "store_id": 2577,
+      "store_key": "b92a247c-926e-417d-9b8d-d81395493eb8",
+      "product": {
+        "id": 0,
+        "name": "Färdigrätt Dagens",
+        "origin": "",
+        "categories": [
+          {
+            "id": 0,
+            "name": "Färdigrätt",
+            "parent_category": {
+              "id": 0,
+              "name": "Färdigmat"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "id": 0,
+            "name": "Djupfryst",
+            "image_url": "https://mpk-public-assets.s3.eu-north-1.amazonaws.com/tags/fryst.png"
+          }
+        ],
+        "brand": "Findus"
+      },
+      "produkt_bild_urls": {
+        "produktKey": "23748a51-3a09-4fe3-e6e5-08d47f3c1412",
+        "bildUrl": "https://mpk-product-images.s3.eu-north-1.amazonaws.com/23748a51-3a09-4fe3-e6e5-08d47f3c1412/full.jpeg",
+        "thumbnailUrl": "https://mpk-product-images.s3.eu-north-1.amazonaws.com/23748a51-3a09-4fe3-e6e5-08d47f3c1412/thumb100p.jpeg"
+      },
+      "article_matches": "Hummus, ",
+      "cardURL": null,
+      "hasRecipe": false,
+      "store": null
+    },
+    {
+      "id": 2377418,
+      "key": "5bf40b77-f711-47d5-8a35-05f970c14279",
+      "condition": "Max 2 köp/hushåll.",
+      "description": "Fetthalt 20%.",
+      "price": "69,90/frp",
+      "comprice": "87,38/kg",
+      "regular": "",
+      "volume": "800 g",
+      "pant": false,
+      "requiresMembershipCard": true,
+      "requiredSelfScan": false,
+      "requiresCoupon": false,
+      "validFrom": 1794178800,
+      "validTo": 1794783599,
+      "featured": true,
+      "age_limit": "",
+      "store_order": 14,
+      "store_id": 2577,
+      "store_key": "b92a247c-926e-417d-9b8d-d81395493eb8",
+      "product": {
+        "id": 0,
+        "name": "Blandfärs",
+        "origin": "Sverige",
+        "categories": [
+          {
+            "id": 0,
+            "name": "Köttfärs",
+            "parent_category": {
+              "id": 0,
+              "name": "Kött"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "id": 0,
+            "name": "Svenskt ursprung",
+            "image_url": "https://mpk-public-assets.s3.eu-north-1.amazonaws.com/tags/sverige.png"
+          }
+        ],
+        "brand": "Scan"
+      },
+      "produkt_bild_urls": {
+        "produktKey": "ab9955b2-6908-4b13-9d4b-e437164ded22",
+        "bildUrl": "https://mpk-product-images.s3.eu-north-1.amazonaws.com/ab9955b2-6908-4b13-9d4b-e437164ded22/full.jpeg",
+        "thumbnailUrl": "https://mpk-product-images.s3.eu-north-1.amazonaws.com/ab9955b2-6908-4b13-9d4b-e437164ded22/thumb100p.jpeg"
+      },
+      "article_matches": "Köttfärs, Blandfärs, Färs",
+      "cardURL": null,
+      "hasRecipe": true,
+      "store": null
+    },
+    {
+      "id": 2377455,
+      "key": "62f9dc86-1cba-4562-8b49-6be048015d40",
+      "condition": "Gäller ej havredryck med chokladsmak.",
+      "description": "",
+      "price": "2 för 28,00",
+      "comprice": "14,00/l",
+      "regular": "",
+      "volume": "1 l",
+      "pant": false,
+      "requiresMembershipCard": false,
+      "requiredSelfScan": false,
+      "requiresCoupon": false,
+      "validFrom": 1794178800,
+      "validTo": 1794783599,
+      "featured": false,
+      "age_limit": "",
+      "store_order": 18,
+      "store_id": 2577,
+      "store_key": "b92a247c-926e-417d-9b8d-d81395493eb8",
+      "product": {
+        "id": 0,
+        "name": "Havredryck, mjölkfri",
+        "origin": "",
+        "categories": [
+          {
+            "id": 0,
+            "name": "Växtbaserat Mejeri",
+            "parent_category": {
+              "id": 0,
+              "name": "Mejeri"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "id": 0,
+            "name": "Laktosfritt",
+            "image_url": "https://mpk-public-assets.s3.eu-north-1.amazonaws.com/tags/laktosfritt.png"
+          },
+          {
+            "id": 0,
+            "name": "Nyckelhålsmärkt",
+            "image_url": "https://mpk-public-assets.s3.eu-north-1.amazonaws.com/tags/nyckelhal.png"
+          }
+        ],
+        "brand": "Coop"
+      },
+      "produkt_bild_urls": {
+        "produktKey": "6684d7f4-1169-473c-9ad9-1de308247325",
+        "bildUrl": "https://mpk-product-images.s3.eu-north-1.amazonaws.com/6684d7f4-1169-473c-9ad9-1de308247325/full.jpeg",
+        "thumbnailUrl": "https://mpk-product-images.s3.eu-north-1.amazonaws.com/6684d7f4-1169-473c-9ad9-1de308247325/thumb100p.jpeg"
+      },
+      "article_matches": "",
+      "cardURL": null,
+      "hasRecipe": false,
+      "store": null
+    },
+    {
+      "id": 2377438,
+      "key": "67e971ff-51b7-4fc9-9031-7e690b1fcc02",
+      "condition": "",
+      "description": "Välj mellan olika sorter.",
+      "price": "2 för 49,00",
+      "comprice": "245,00-272,22/kg",
+      "regular": "",
+      "volume": "80-100 g",
+      "pant": false,
+      "requiresMembershipCard": true,
+      "requiredSelfScan": false,
+      "requiresCoupon": false,
+      "validFrom": 1794178800,
+      "validTo": 1794783599,
+      "featured": false,
+      "age_limit": "",
+      "store_order": 19,
+      "store_id": 2577,
+      "store_key": "b92a247c-926e-417d-9b8d-d81395493eb8",
+      "product": {
+        "id": 0,
+        "name": "Pålägg, skivat",
+        "origin": "Sverige",
+        "categories": [
+          {
+            "id": 0,
+            "name": "Pålägg",
+            "parent_category": {
+              "id": 0,
+              "name": "Korv & Pålägg"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "id": 0,
+            "name": "Svenskt ursprung",
+            "image_url": "https://mpk-public-assets.s3.eu-north-1.amazonaws.com/tags/sverige.png"
+          }
+        ],
+        "brand": "Jakobsdals"
+      },
+      "produkt_bild_urls": {
+        "produktKey": "672862f8-3417-465e-a370-1d6df9bab7be",
+        "bildUrl": "https://mpk-product-images.s3.eu-north-1.amazonaws.com/672862f8-3417-465e-a370-1d6df9bab7be/full.jpeg",
+        "thumbnailUrl": "https://mpk-product-images.s3.eu-north-1.amazonaws.com/672862f8-3417-465e-a370-1d6df9bab7be/thumb100p.jpeg"
+      },
+      "article_matches": "Pålägg, ",
+      "cardURL": null,
+      "hasRecipe": false,
+      "store": null
+    },
+    {
+      "id": 2377421,
+      "key": "6805b748-2592-402a-a0d8-9d073730b9e9",
+      "condition": "",
+      "description": "",
+      "price": "2 för 40,00",
+      "comprice": "238,10/kg",
+      "regular": "",
+      "volume": "3x28 g",
+      "pant": false,
+      "requiresMembershipCard": false,
+      "requiredSelfScan": false,
+      "requiresCoupon": false,
+      "validFrom": 1794178800,
+      "validTo": 1794783599,
+      "featured": true,
+      "age_limit": "",
+      "store_order": 4,
+      "store_id": 2577,
+      "store_key": "b92a247c-926e-417d-9b8d-d81395493eb8",
+      "product": {
+        "id": 0,
+        "name": "Kryddmix, 3-p",
+        "origin": "",
+        "categories": [
+          {
+            "id": 0,
+            "name": "Mexikanskt",
+            "parent_category": {
+              "id": 0,
+              "name": "Skafferi"
+            }
+          }
+        ],
+        "tags": [],
+        "brand": "Santa Maria"
+      },
+      "produkt_bild_urls": {
+        "produktKey": "484c21cb-c292-4d4f-f0ef-08d47f3c1412",
+        "bildUrl": "https://mpk-product-images.s3.eu-north-1.amazonaws.com/484c21cb-c292-4d4f-f0ef-08d47f3c1412/full.jpeg",
+        "thumbnailUrl": "https://mpk-product-images.s3.eu-north-1.amazonaws.com/484c21cb-c292-4d4f-f0ef-08d47f3c1412/thumb100p.jpeg"
+      },
+      "article_matches": "Kryddmix, ",
+      "cardURL": null,
+      "hasRecipe": false,
+      "store": null
+    },
+    {
+      "id": 2377419,
+      "key": "6fe7b323-db90-4693-b371-118268d5d51d",
+      "condition": "",
+      "description": "",
+      "price": "2 för 59,00",
+      "comprice": "29,50/kg",
+      "regular": "",
+      "volume": "1 kg",
+      "pant": false,
+      "requiresMembershipCard": true,
+      "requiredSelfScan": false,
+      "requiresCoupon": false,
+      "validFrom": 1794178800,
+      "validTo": 1794783599,
+      "featured": true,
+      "age_limit": "",
+      "store_order": 10,
+      "store_id": 2577,
+      "store_key": "b92a247c-926e-417d-9b8d-d81395493eb8",
+      "product": {
+        "id": 0,
+        "name": "Kycklingben/-klubba/-vinge",
+        "origin": "Sverige",
+        "categories": [
+          {
+            "id": 0,
+            "name": "Kyckling & Fågel",
+            "parent_category": {
+              "id": 0,
+              "name": "Kött"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "id": 0,
+            "name": "Djupfryst",
+            "image_url": "https://mpk-public-assets.s3.eu-north-1.amazonaws.com/tags/fryst.png"
+          },
+          {
+            "id": 0,
+            "name": "Svenskt ursprung",
+            "image_url": "https://mpk-public-assets.s3.eu-north-1.amazonaws.com/tags/sverige.png"
+          }
+        ],
+        "brand": "GuldFågeln"
+      },
+      "produkt_bild_urls": {
+        "produktKey": "91163894-1b42-465f-7e85-08d49846e02b",
+        "bildUrl": "https://mpk-product-images.s3.eu-north-1.amazonaws.com/91163894-1b42-465f-7e85-08d49846e02b/full.jpeg",
+        "thumbnailUrl": "https://mpk-product-images.s3.eu-north-1.amazonaws.com/91163894-1b42-465f-7e85-08d49846e02b/thumb100p.jpeg"
+      },
+      "article_matches": "Vin, Kyckling, Kycklingben",
+      "cardURL": null,
+      "hasRecipe": true,
+      "store": null
+    },
+    {
+      "id": 2377454,
+      "key": "72d1ac35-9fe1-4a79-ac33-1c55bdff621c",
+      "condition": "",
+      "description": "Välj mellan olika sorter.",
+      "price": "2 för 30,00",
+      "comprice": "30,00/l",
+      "regular": "",
+      "volume": "500 ml",
+      "pant": false,
+      "requiresMembershipCard": false,
+      "requiredSelfScan": false,
+      "requiresCoupon": false,
+      "validFrom": 1794178800,
+      "validTo": 1794783599,
+      "featured": false,
+      "age_limit": "",
+      "store_order": 17,
+      "store_id": 2577,
+      "store_key": "b92a247c-926e-417d-9b8d-d81395493eb8",
+      "product": {
+        "id": 0,
+        "name": "Tvål Pump-",
+        "origin": "",
+        "categories": [
+          {
+            "id": 0,
+            "name": "Tvål & Dusch",
+            "parent_category": {
+              "id": 0,
+              "name": "Kroppsvård"
+            }
+          }
+        ],
+        "tags": [],
+        "brand": "Coop"
+      },
+      "produkt_bild_urls": {
+        "produktKey": "e7615562-029b-4d4d-f3b1-08d752490d14",
+        "bildUrl": "https://mpk-product-images.s3.eu-north-1.amazonaws.com/e7615562-029b-4d4d-f3b1-08d752490d14/full.jpeg",
+        "thumbnailUrl": "https://mpk-product-images.s3.eu-north-1.amazonaws.com/e7615562-029b-4d4d-f3b1-08d752490d14/thumb100p.jpeg"
+      },
+      "article_matches": "Tvål, Pumptvål",
+      "cardURL": null,
+      "hasRecipe": false,
+      "store": null
+    },
+    {
+      "id": 2377481,
+      "key": "74148377-a9eb-4590-8ef4-f28b3054feab",
+      "condition": "",
+      "description": "",
+      "price": "89,00/frp",
+      "comprice": "222,50/kg",
+      "regular": "",
+      "volume": "400 g",
+      "pant": false,
+      "requiresMembershipCard": false,
+      "requiredSelfScan": false,
+      "requiresCoupon": false,
+      "validFrom": 1794178800,
+      "validTo": 1794783599,
+      "featured": true,
+      "age_limit": "",
+      "store_order": 10,
+      "store_id": 2577,
+      "store_key": "b92a247c-926e-417d-9b8d-d81395493eb8",
+      "product": {
+        "id": 0,
+        "name": "Torskfilé",
+        "origin": "",
+        "categories": [
+          {
+            "id": 0,
+            "name": "Fisk",
+            "parent_category": {
+              "id": 0,
+              "name": "Fisk & skaldjur"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "id": 0,
+            "name": "Djupfryst",
+            "image_url": "https://mpk-public-assets.s3.eu-north-1.amazonaws.com/tags/fryst.png"
+          },
+          {
+            "id": 0,
+            "name": "Nyckelhålsmärkt",
+            "image_url": "https://mpk-public-assets.s3.eu-north-1.amazonaws.com/tags/nyckelhal.png"
+          }
+        ],
+        "brand": "Royal Greenland"
+      },
+      "produkt_bild_urls": {
+        "produktKey": "c4f7e3c4-f40c-4dac-a650-a18f6c8f4c87",
+        "bildUrl": "https://mpk-product-images.s3.eu-north-1.amazonaws.com/c4f7e3c4-f40c-4dac-a650-a18f6c8f4c87/full.jpeg",
+        "thumbnailUrl": "https://mpk-product-images.s3.eu-north-1.amazonaws.com/c4f7e3c4-f40c-4dac-a650-a18f6c8f4c87/thumb100p.jpeg"
+      },
+      "article_matches": "Fisk, Torsk, Torskfilé, Fiskfilé",
+      "cardURL": null,
+      "hasRecipe": true,
+      "store": null
+    },
+    {
+      "id": 2377431,
+      "key": "7fb5de27-defb-4f58-b885-7b74040291c6",
+      "condition": "",
+      "description": "",
+      "price": "10,00/frp",
+      "comprice": "10,00/kg",
+      "regular": "",
+      "volume": "1 kg",
+      "pant": false,
+      "requiresMembershipCard": false,
+      "requiredSelfScan": false,
+      "requiresCoupon": false,
+      "validFrom": 1794178800,
+      "validTo": 1794783599,
+      "featured": false,
+      "age_limit": "",
+      "store_order": 9,
+      "store_id": 2577,
+      "store_key": "b92a247c-926e-417d-9b8d-d81395493eb8",
+      "product": {
+        "id": 0,
+        "name": "Morot i påse",
+        "origin": "Sverige",
+        "categories": [
+          {
+            "id": 0,
+            "name": "Färska Grönsaker",
+            "parent_category": {
+              "id": 0,
+              "name": "Grönsaker"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "id": 0,
+            "name": "Klass 1",
+            "image_url": "https://mpk-public-assets.s3.eu-north-1.amazonaws.com/tags/klass1.png"
+          },
+          {
+            "id": 0,
+            "name": "Nyckelhålsmärkt",
+            "image_url": "https://mpk-public-assets.s3.eu-north-1.amazonaws.com/tags/nyckelhal.png"
+          },
+          {
+            "id": 0,
+            "name": "Svenskt ursprung",
+            "image_url": "https://mpk-public-assets.s3.eu-north-1.amazonaws.com/tags/sverige.png"
+          }
+        ],
+        "brand": "Coop"
+      },
+      "produkt_bild_urls": {
+        "produktKey": "cd82043c-5e20-47fe-d9d2-08d4a1776a57",
+        "bildUrl": "https://mpk-product-images.s3.eu-north-1.amazonaws.com/cd82043c-5e20-47fe-d9d2-08d4a1776a57/full.jpeg",
+        "thumbnailUrl": "https://mpk-product-images.s3.eu-north-1.amazonaws.com/cd82043c-5e20-47fe-d9d2-08d4a1776a57/thumb100p.jpeg"
+      },
+      "article_matches": "Morötter, Grönsaker, Morot, Grönt, Rotsaker",
+      "cardURL": null,
+      "hasRecipe": true,
+      "store": null
+    },
+    {
+      "id": 2377420,
+      "key": "b8fcfae7-7be8-46a3-addd-f3d77ab9b83b",
+      "condition": "",
+      "description": "",
+      "price": "25,00/frp",
+      "comprice": "50,00/kg",
+      "regular": "",
+      "volume": "500 g",
+      "pant": false,
+      "requiresMembershipCard": true,
+      "requiredSelfScan": false,
+      "requiresCoupon": false,
+      "validFrom": 1794178800,
+      "validTo": 1794783599,
+      "featured": true,
+      "age_limit": "",
+      "store_order": 9,
+      "store_id": 2577,
+      "store_key": "b92a247c-926e-417d-9b8d-d81395493eb8",
+      "product": {
+        "id": 0,
+        "name": "Vindruvor, röda, kärnfria i ask",
+        "origin": "Italien/Spanien",
+        "categories": [
+          {
+            "id": 0,
+            "name": "Frukt",
+            "parent_category": {
+              "id": 0,
+              "name": "Frukt & bär"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "id": 0,
+            "name": "Klass 1",
+            "image_url": "https://mpk-public-assets.s3.eu-north-1.amazonaws.com/tags/klass1.png"
+          },
+          {
+            "id": 0,
+            "name": "Nyckelhålsmärkt",
+            "image_url": "https://mpk-public-assets.s3.eu-north-1.amazonaws.com/tags/nyckelhal.png"
+          }
+        ],
+        "brand": "Coop"
+      },
+      "produkt_bild_urls": {
+        "produktKey": "a9817436-f16a-49c2-a58d-08d7358bd1b3",
+        "bildUrl": "https://mpk-product-images.s3.eu-north-1.amazonaws.com/a9817436-f16a-49c2-a58d-08d7358bd1b3/full.jpeg",
+        "thumbnailUrl": "https://mpk-product-images.s3.eu-north-1.amazonaws.com/a9817436-f16a-49c2-a58d-08d7358bd1b3/thumb100p.jpeg"
+      },
+      "article_matches": "Vin, Frukt, Bär, Vindruvor, Druvor",
+      "cardURL": null,
+      "hasRecipe": true,
+      "store": null
+    },
+    {
+      "id": 2377430,
+      "key": "ba4ba52f-a0d8-42b4-9fe6-7630cce2f5f2",
+      "condition": "",
+      "description": "",
+      "price": "20,00/frp",
+      "comprice": "20,00/kg",
+      "regular": "",
+      "volume": "1 kg",
+      "pant": false,
+      "requiresMembershipCard": false,
+      "requiredSelfScan": false,
+      "requiresCoupon": false,
+      "validFrom": 1794178800,
+      "validTo": 1794783599,
+      "featured": false,
+      "age_limit": "",
+      "store_order": 9,
+      "store_id": 2577,
+      "store_key": "b92a247c-926e-417d-9b8d-d81395493eb8",
+      "product": {
+        "id": 0,
+        "name": "Potatis i påse, fast/mjölig, eko",
+        "origin": "Sverige",
+        "categories": [
+          {
+            "id": 0,
+            "name": "Färska Grönsaker",
+            "parent_category": {
+              "id": 0,
+              "name": "Grönsaker"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "id": 0,
+            "name": "Ekologiskt",
+            "image_url": "https://mpk-public-assets.s3.eu-north-1.amazonaws.com/tags/ekologisk.png"
+          },
+          {
+            "id": 0,
+            "name": "KRAV",
+            "image_url": "https://mpk-public-assets.s3.eu-north-1.amazonaws.com/tags/krav.png"
+          },
+          {
+            "id": 0,
+            "name": "Klass 1",
+            "image_url": "https://mpk-public-assets.s3.eu-north-1.amazonaws.com/tags/klass1.png"
+          },
+          {
+            "id": 0,
+            "name": "Nyckelhålsmärkt",
+            "image_url": "https://mpk-public-assets.s3.eu-north-1.amazonaws.com/tags/nyckelhal.png"
+          },
+          {
+            "id": 0,
+            "name": "Svenskt ursprung",
+            "image_url": "https://mpk-public-assets.s3.eu-north-1.amazonaws.com/tags/sverige.png"
+          }
+        ],
+        "brand": "Änglamark"
+      },
+      "produkt_bild_urls": {
+        "produktKey": "af71d9f9-8cce-4bd3-b476-dcedbfe6b85f",
+        "bildUrl": "https://mpk-product-images.s3.eu-north-1.amazonaws.com/af71d9f9-8cce-4bd3-b476-dcedbfe6b85f/full.jpeg",
+        "thumbnailUrl": "https://mpk-product-images.s3.eu-north-1.amazonaws.com/af71d9f9-8cce-4bd3-b476-dcedbfe6b85f/thumb100p.jpeg"
+      },
+      "article_matches": "Potatis, Grönsaker, Grönt, Rotsaker, Matpotatis",
+      "cardURL": null,
+      "hasRecipe": true,
+      "store": null
+    },
+    {
+      "id": 2377442,
+      "key": "bad11a2f-2b8c-40ca-90e8-5f5fa9d1a961",
+      "condition": "",
+      "description": "Välj mellan olika sorter.",
+      "price": "3 för 65,00",
+      "comprice": "78,79-108,33/kg",
+      "regular": "",
+      "volume": "200-275 g",
+      "pant": false,
+      "requiresMembershipCard": true,
+      "requiredSelfScan": false,
+      "requiresCoupon": false,
+      "validFrom": 1794178800,
+      "validTo": 1794783599,
+      "featured": false,
+      "age_limit": "",
+      "store_order": 13,
+      "store_id": 2577,
+      "store_key": "b92a247c-926e-417d-9b8d-d81395493eb8",
+      "product": {
+        "id": 0,
+        "name": "Snacks",
+        "origin": "",
+        "categories": [
+          {
+            "id": 0,
+            "name": "Chips, Popcorn & Snacks",
+            "parent_category": {
+              "id": 0,
+              "name": "Snacks & Godis"
+            }
+          }
+        ],
+        "tags": [],
+        "brand": "Estrella"
+      },
+      "produkt_bild_urls": {
+        "produktKey": "dd05c135-35b1-4a31-9a37-fcc22e1891f9",
+        "bildUrl": "https://mpk-product-images.s3.eu-north-1.amazonaws.com/dd05c135-35b1-4a31-9a37-fcc22e1891f9/full.jpeg",
+        "thumbnailUrl": "https://mpk-product-images.s3.eu-north-1.amazonaws.com/dd05c135-35b1-4a31-9a37-fcc22e1891f9/thumb100p.jpeg"
+      },
+      "article_matches": "Snacks, ",
+      "cardURL": null,
+      "hasRecipe": false,
+      "store": null
+    },
+    {
+      "id": 2377453,
+      "key": "d32a990e-557d-4741-a576-0cca4997fcaa",
+      "condition": "",
+      "description": "",
+      "price": "2 för 35,00",
+      "comprice": "46,67/kg",
+      "regular": "",
+      "volume": "375 g",
+      "pant": false,
+      "requiresMembershipCard": false,
+      "requiredSelfScan": false,
+      "requiresCoupon": false,
+      "validFrom": 1794178800,
+      "validTo": 1794783599,
+      "featured": false,
+      "age_limit": "",
+      "store_order": 2,
+      "store_id": 2577,
+      "store_key": "b92a247c-926e-417d-9b8d-d81395493eb8",
+      "product": {
+        "id": 0,
+        "name": "Tunnbröd",
+        "origin": "",
+        "categories": [
+          {
+            "id": 0,
+            "name": "Mjukt Matbröd",
+            "parent_category": {
+              "id": 0,
+              "name": "Bröd & kakor"
+            }
+          }
+        ],
+        "tags": [],
+        "brand": "Coop"
+      },
+      "produkt_bild_urls": {
+        "produktKey": "8bad56df-deb2-41fd-b51f-04440a4b66cd",
+        "bildUrl": "https://mpk-product-images.s3.eu-north-1.amazonaws.com/8bad56df-deb2-41fd-b51f-04440a4b66cd/full.jpeg",
+        "thumbnailUrl": "https://mpk-product-images.s3.eu-north-1.amazonaws.com/8bad56df-deb2-41fd-b51f-04440a4b66cd/thumb100p.jpeg"
+      },
+      "article_matches": "Bröd, Tunnbröd, Matbröd, Ljust bröd",
+      "cardURL": null,
+      "hasRecipe": true,
+      "store": null
+    },
+    {
+      "id": 2377448,
+      "key": "e31c52ad-6f29-4c3d-9e7e-eb9db6621c59",
+      "condition": "",
+      "description": "",
+      "price": "2 för 99,00",
+      "comprice": "49,50/st",
+      "regular": "",
+      "volume": "",
+      "pant": false,
+      "requiresMembershipCard": false,
+      "requiredSelfScan": false,
+      "requiresCoupon": false,
+      "validFrom": 1794178800,
+      "validTo": 1794783599,
+      "featured": false,
+      "age_limit": "",
+      "store_order": 16,
+      "store_id": 2577,
+      "store_key": "b92a247c-926e-417d-9b8d-d81395493eb8",
+      "product": {
+        "id": 0,
+        "name": "Amaryllis, röd, 2-stänglad",
+        "origin": "",
+        "categories": [
+          {
+            "id": 0,
+            "name": "Blommor & Växter",
+            "parent_category": {
+              "id": 0,
+              "name": "Hem & Hushåll"
+            }
+          }
+        ],
+        "tags": [],
+        "brand": null
+      },
+      "produkt_bild_urls": {
+        "produktKey": "40cea013-743b-406d-83d3-40ae29a2b3a6",
+        "bildUrl": "https://mpk-product-images.s3.eu-north-1.amazonaws.com/40cea013-743b-406d-83d3-40ae29a2b3a6/full.jpeg",
+        "thumbnailUrl": "https://mpk-product-images.s3.eu-north-1.amazonaws.com/40cea013-743b-406d-83d3-40ae29a2b3a6/thumb100p.jpeg"
+      },
+      "article_matches": "Amaryllis, ",
+      "cardURL": null,
+      "hasRecipe": false,
+      "store": null
+    },
+    {
+      "id": 2377416,
+      "key": "f40d2e99-56f3-4a8d-9353-e97cfb287adf",
+      "condition": "Max 2 köp/hushåll.",
+      "description": "",
+      "price": "65,00/kg",
+      "comprice": "65,00/kg",
+      "regular": "",
+      "volume": "ca 1 kg",
+      "pant": false,
+      "requiresMembershipCard": true,
+      "requiredSelfScan": false,
+      "requiresCoupon": false,
+      "validFrom": 1794178800,
+      "validTo": 1794783599,
+      "featured": true,
+      "age_limit": "",
+      "store_order": 14,
+      "store_id": 2577,
+      "store_key": "b92a247c-926e-417d-9b8d-d81395493eb8",
+      "product": {
+        "id": 0,
+        "name": "Fläskytterfilé",
+        "origin": "Sverige",
+        "categories": [
+          {
+            "id": 0,
+            "name": "Fläskkött",
+            "parent_category": {
+              "id": 0,
+              "name": "Kött"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "id": 0,
+            "name": "Svenskt ursprung",
+            "image_url": "https://mpk-public-assets.s3.eu-north-1.amazonaws.com/tags/sverige.png"
+          }
+        ],
+        "brand": "Scan"
+      },
+      "produkt_bild_urls": {
+        "produktKey": "a3c57f10-72cd-4d5e-8b7a-a690ba4c7a0c",
+        "bildUrl": "https://mpk-product-images.s3.eu-north-1.amazonaws.com/a3c57f10-72cd-4d5e-8b7a-a690ba4c7a0c/full.jpeg",
+        "thumbnailUrl": "https://mpk-product-images.s3.eu-north-1.amazonaws.com/a3c57f10-72cd-4d5e-8b7a-a690ba4c7a0c/thumb100p.jpeg"
+      },
+      "article_matches": "Fläskfilé, Kött, Fläskytterfilé, Fläskkött, Ytterfilé, Filé",
+      "cardURL": null,
+      "hasRecipe": true,
+      "store": null
+    },
+    {
+      "id": 2377588,
+      "key": "0dccb9b7-6712-44f5-9efc-cb7b62bd6320",
+      "condition": "",
+      "description": "",
+      "price": "49,00/frp",
+      "comprice": "98,00/kg",
+      "regular": "",
+      "volume": "500 g",
+      "pant": false,
+      "requiresMembershipCard": false,
+      "requiredSelfScan": false,
+      "requiresCoupon": false,
+      "validFrom": 1794178800,
+      "validTo": 1794783599,
+      "featured": false,
+      "age_limit": "",
+      "store_order": 13,
+      "store_id": 2577,
+      "store_key": "b92a247c-926e-417d-9b8d-d81395493eb8",
+      "product": {
+        "id": 0,
+        "name": "Chokladbitmix i påse",
+        "origin": "",
+        "categories": [
+          {
+            "id": 0,
+            "name": "Choklad",
+            "parent_category": {
+              "id": 0,
+              "name": "Snacks & Godis"
+            }
+          }
+        ],
+        "tags": [],
+        "brand": "Coop"
+      },
+      "produkt_bild_urls": null,
+      "article_matches": "Godis, Choklad, Snacks, Smågodis, Chokladkaka",
+      "cardURL": null,
+      "hasRecipe": true,
+      "store": null
+    }
+  ]
+}

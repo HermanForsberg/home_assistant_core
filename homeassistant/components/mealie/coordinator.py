@@ -27,7 +27,7 @@ from homeassistant.util import dt as dt_util
 from .const import DOMAIN, LOGGER
 
 WEEK = timedelta(days=7)
-PROMOTIONS_UPDATE_INTERVAL = timedelta(hours=6)
+PROMOTIONS_UPDATE_INTERVAL = timedelta(days=1)
 
 
 @dataclass

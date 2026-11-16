@@ -156,6 +156,9 @@
     "update_failed_mealplan": {
       "message": "Could not fetch mealplan data."
     },
+    "update_failed_promotions": {
+      "message": "Could not fetch grocery promotions."
+    },
     "update_failed_shopping_list": {
       "message": "Could not fetch shopping list data."
     },
@@ -167,6 +170,26 @@
     },
     "version_error": {
       "message": "You are running {mealie_version} of Mealie. Minimum required version is {min_version}. Please upgrade Mealie and then retry."
+    }
+  },
+  "options": {
+    "error": {
+      "cannot_connect": "Could not connect to Matpriskollen. Try again later.",
+      "invalid_postal_code": "Enter a Swedish postal code with five digits.",
+      "location_not_found": "Matpriskollen has no stores near this postal code.",
+      "unknown": "[%key:common::config_flow::error::unknown%]"
+    },
+    "step": {
+      "init": {
+        "data": {
+          "postal_code": "Postal code"
+        },
+        "data_description": {
+          "postal_code": "The Swedish postal code to find grocery promotions for. Leave empty to turn off grocery promotions."
+        },
+        "description": "Grocery promotions from the stores near you are provided by Matpriskollen, which only covers Sweden.",
+        "title": "Grocery promotions"
+      }
     }
   },
   "selector": {

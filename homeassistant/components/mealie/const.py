@@ -8,6 +8,8 @@ DOMAIN = "mealie"
 
 LOGGER = logging.getLogger(__package__)
 
+CONF_POSTAL_CODE = "postal_code"
+
 ATTR_START_DATE = "start_date"
 ATTR_END_DATE = "end_date"
 ATTR_MEALPLAN_ID = "mealplan_id"

@@ -1,17 +1,25 @@
 """Config flow for Mealie."""
 
 from collections.abc import Mapping
+import re
 from typing import Any, override
 
+from aiomatpriskollen import Matpriskollen, MatpriskollenError
 from aiomealie import MealieAuthenticationError, MealieClient, MealieConnectionError
 import voluptuous as vol
 
-from homeassistant.config_entries import ConfigFlow, ConfigFlowResult
+from homeassistant.config_entries import (
+    ConfigFlow,
+    ConfigFlowResult,
+    OptionsFlowWithReload,
+)
 from homeassistant.const import CONF_API_TOKEN, CONF_HOST, CONF_PORT, CONF_VERIFY_SSL
+from homeassistant.core import callback
 from homeassistant.helpers.aiohttp_client import async_get_clientsession
 from homeassistant.helpers.service_info.hassio import HassioServiceInfo
 
-from .const import DOMAIN, LOGGER, MIN_REQUIRED_MEALIE_VERSION
+from .const import CONF_POSTAL_CODE, DOMAIN, LOGGER, MIN_REQUIRED_MEALIE_VERSION
+from .coordinator import MealieConfigEntry
 from .utils import create_version
 
 USER_SCHEMA = vol.Schema(
@@ -31,8 +39,14 @@ DISCOVERY_SCHEMA = vol.Schema(
         vol.Required(CONF_API_TOKEN): str,
     }
 )
+OPTIONS_SCHEMA = vol.Schema(
+    {
+        vol.Optional(CONF_POSTAL_CODE): str,
+    }
+)
 
 EXAMPLE_URL = "http://192.168.1.123:1234"
+POSTAL_CODE_PATTERN = re.compile(r"[0-9]{5}")
 
 
 class MealieConfigFlow(ConfigFlow, domain=DOMAIN):
@@ -43,6 +57,13 @@ class MealieConfigFlow(ConfigFlow, domain=DOMAIN):
     host: str | None = None
     verify_ssl: bool = True
     _hassio_discovery: dict[str, Any] | None = None
+
+    @staticmethod
+    @callback
+    @override
+    def async_get_options_flow(config_entry: MealieConfigEntry) -> MealieOptionsFlow:
+        """Create the options flow."""
+        return MealieOptionsFlow()
 
     async def check_connection(
         self, api_token: str
@@ -215,3 +236,46 @@ class MealieConfigFlow(ConfigFlow, domain=DOMAIN):
             description_placeholders={"addon": self._hassio_discovery["addon"]},
             errors=errors or {},
         )
+
+
+class MealieOptionsFlow(OptionsFlowWithReload):
+    """Mealie options flow."""
+
+    async def async_step_init(
+        self, user_input: dict[str, Any] | None = None
+    ) -> ConfigFlowResult:
+        """Manage the location used for grocery promotions."""
+        errors: dict[str, str] = {}
+        if user_input is not None:
+            postal_code = "".join(user_input.get(CONF_POSTAL_CODE, "").split())
+            if not postal_code:
+                return self.async_create_entry(data={})
+            
+            errors = await self._async_validate_postal_code(postal_code)
+            if not errors:
+                return self.async_create_entry(data={CONF_POSTAL_CODE: postal_code})
+    
+        return self.async_show_form(
+            step_id="init",
+            data_schema=self.add_suggested_values_to_schema(
+                OPTIONS_SCHEMA, user_input or self.config_entry.options
+            ),
+            errors=errors,
+        )
+
+    async def _async_validate_postal_code(self, postal_code: str) -> dict[str, str]:
+        """Check that grocery promotions can be found for the postal code."""
+        if not POSTAL_CODE_PATTERN.fullmatch(postal_code):
+            return {CONF_POSTAL_CODE: "invalid_postal_code"}
+        client = Matpriskollen(async_get_clientsession(self.hass))
+        
+        try:
+            stores = await client.get_stores_from_postal_code(postal_code)
+        except MatpriskollenError:
+            return {"base": "cannot_connect"}
+        except Exception:  # noqa: BLE001
+            LOGGER.exception("Unexpected error")
+            return {"base": "unknown"}
+        if not stores:
+            return {CONF_POSTAL_CODE: "location_not_found"}
+        return {}

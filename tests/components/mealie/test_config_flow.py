@@ -5,7 +5,7 @@ from unittest.mock import AsyncMock
 from aiomealie import About, MealieAuthenticationError, MealieConnectionError
 import pytest
 
-from homeassistant.components.mealie.const import DOMAIN
+from homeassistant.components.mealie.const import CONF_POSTAL_CODE, DOMAIN
 from homeassistant.config_entries import SOURCE_HASSIO, SOURCE_IGNORE, SOURCE_USER
 from homeassistant.const import CONF_API_TOKEN, CONF_HOST, CONF_VERIFY_SSL
 from homeassistant.core import HomeAssistant
@@ -484,3 +484,38 @@ async def test_hassio_connection_error(
     )
 
     assert result["type"] is FlowResultType.CREATE_ENTRY
+
+
+async def test_options_flow_empty_postal_code(
+    hass: HomeAssistant,
+    mock_mealie_client: AsyncMock,
+    mock_config_entry: MockConfigEntry,
+) -> None:
+    """Test an empty postal code is accepted and disables promotions."""
+    await setup_integration(hass, mock_config_entry)
+
+    result = await hass.config_entries.options.async_init(mock_config_entry.entry_id)
+    assert result["type"] is FlowResultType.FORM
+    assert result["step_id"] == "init"
+
+    result = await hass.config_entries.options.async_configure(
+        result["flow_id"], user_input={CONF_POSTAL_CODE: ""}
+    )
+    assert result["type"] is FlowResultType.CREATE_ENTRY
+    assert result["data"] == {}
+
+
+async def test_options_flow_invalid_postal_code(
+    hass: HomeAssistant,
+    mock_mealie_client: AsyncMock,
+    mock_config_entry: MockConfigEntry,
+) -> None:
+    """Test a malformed postal code shows an error."""
+    await setup_integration(hass, mock_config_entry)
+
+    result = await hass.config_entries.options.async_init(mock_config_entry.entry_id)
+    result = await hass.config_entries.options.async_configure(
+        result["flow_id"], user_input={CONF_POSTAL_CODE: "abc"}
+    )
+    assert result["type"] is FlowResultType.FORM
+    assert result["errors"] == {CONF_POSTAL_CODE: "invalid_postal_code"}

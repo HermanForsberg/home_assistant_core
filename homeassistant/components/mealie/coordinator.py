@@ -5,6 +5,7 @@ from dataclasses import dataclass
 from datetime import timedelta
 from typing import override
 
+from aiomatpriskollen import Matpriskollen, MatpriskollenError, Offer, Store
 from aiomealie import (
     MealieAuthenticationError,
     MealieClient,
@@ -26,6 +27,7 @@ from homeassistant.util import dt as dt_util
 from .const import DOMAIN, LOGGER
 
 WEEK = timedelta(days=7)
+PROMOTIONS_UPDATE_INTERVAL = timedelta(days=1)
 
 
 @dataclass
@@ -37,6 +39,7 @@ class MealieData:
     mealplan_coordinator: MealieMealplanCoordinator
     shoppinglist_coordinator: MealieShoppingListCoordinator
     statistics_coordinator: MealieStatisticsCoordinator
+    promotions_coordinator: MealiePromotionsCoordinator | None
 
 
 type MealieConfigEntry = ConfigEntry[MealieData]
@@ -151,3 +154,52 @@ class MealieStatisticsCoordinator(MealieDataUpdateCoordinator[Statistics]):
         self,
     ) -> Statistics:
         return await self.client.get_statistics()
+
+
+@dataclass
+class StorePromotions:
+    """Promotions offered by a single store."""
+
+    store: Store
+    offers: list[Offer]
+
+
+class MealiePromotionsCoordinator(DataUpdateCoordinator[list[StorePromotions] | None]):
+    """Class to manage fetching grocery promotions near the configured location."""
+
+    config_entry: MealieConfigEntry
+
+    def __init__(
+        self,
+        hass: HomeAssistant,
+        config_entry: MealieConfigEntry,
+        client: Matpriskollen,
+        postal_code: str,
+    ) -> None:
+        """Initialize the promotions coordinator."""
+        super().__init__(
+            hass,
+            LOGGER,
+            config_entry=config_entry,
+            name="Mealie promotions",
+            update_interval=PROMOTIONS_UPDATE_INTERVAL,
+        )
+        self.client = client
+        self.postal_code = postal_code
+
+    @override
+    async def _async_update_data(self) -> list[StorePromotions]:
+        """Fetch the promotions of the stores near the configured location."""
+        try:
+            stores = await self.client.get_stores_from_postal_code(self.postal_code)
+            return [
+                StorePromotions(
+                    store, await self.client.get_deals_from_store(store.uuid)
+                )
+                for store in stores
+            ]
+        except MatpriskollenError as error:
+            raise UpdateFailed(
+                translation_domain=DOMAIN,
+                translation_key="update_failed_promotions",
+            ) from error
